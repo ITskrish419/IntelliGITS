@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            /* background:url(laptop2.jpg); */
+            background-size: cover;
+            /* background-position: center;./// */
+            background-repeat: no-repeat;
+            background-color: black;
+            height: 1800px;
+        }
+        h1{
+            text-align: center;
+            /* text-shadow: 5px 5px  rgb(200, 200, 81); */
+            font-size: 50px;
+            position: absolute;
+            top: 60px;
+            left: 110px;
+            color:white;
+        }
+        .hh{
+            position: absolute;
+            left: 130px;
+            top: 0px;
+            font-size: 25px;
+            color: rgb(13, 170, 238);
+        }
+        ul{
+            position: absolute;
+            top: 0px;
+            right: 150px;
+            display: flex;
+        }
+        li{
+            padding: 12px;
+            list-style-type: none;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: rgb(13, 170, 238);
+            transition-duration: 0.5s;
+            transition: 0.5s;
+            border-radius: 20px;
+            color:white;
+            font-size: 20px;
+            padding: 10px;
+            /* border: 1px solid white; */
+            height: 17px;
+        }
+        .list ul{
+            display:flex;
+        }
+        .box{
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            width:1300px;
+            height:50px;
+            border: 1px  black;
+            background:blue;
+            backdrop-filter: blur(8px);
+            opacity:0.1;
+            border-radius: 20px;
+        }
+        span{
+            color: rgb(13, 170, 238);
+            position: absolute;
+            left: 0px;
+        }
+        .box1{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    transform: translate(10px,10px);
+    transform: rotate(40deg);
+    background-color:rgb(79, 222, 244);
+    position: absolute;
+    left:1020px;
+    top: 250px;
+    border-style: none;
+    border-radius: 40%;
+    /* opacity: 0.5; */
+    /* box-shadow:5px 5px 10px rgb(79, 222, 244) ; */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.box1 img{
+    height: 400px;
+    width: 400px;
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+}
+.b1{
+    position: absolute;
+    top: 600px;
+    left: 110px;
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 0 0 5px cyan,0 0 25px cyan;
+}
+.b1 a{
+    color: white;
+}
+.b1:hover{
+    box-shadow: 0 0 5px cyan, 0 0 15px,0 0 15px cyan,0 0 50px cyan,0 0 50px cyan,0 0 100px cyan;
+}
+.b2{
+    position: absolute;
+    top: 600px;
+    left: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    color:black;
+    background-color:greenyellow;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 0 0 5px rgb(45, 245, 35),0 0 25px rgb(37, 246, 54);
+}
+.b2:hover{
+    box-shadow: 0 0 5px rgb(52, 242, 34), 0 0 25px,0 0 25px rgb(29, 240, 32),0 0 50px rgb(30, 232, 108),0 0 100px rgb(41, 245, 78),0 0 200px rgb(33, 246, 72);
+}
+
+.card1{
+height: 300px;
+width: 300px;
+/* border: 1px solid white; */
+/* color: white; */
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+position: absolute;
+top: 800px;
+left: 75px;
+}
+.card1:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card1 img{
+width: 100%;
+height:170px;
+/* border-radius: 10px; */
+}
+.card1 p{
+text-align: center;
+font-size: 20px;
+font-weight: bolder;
+/* font-family: 'Times New Roman', Times, serif; */
+
+}
+.card1 button{
+margin-left: 100px;
+margin-top: 24px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card2{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 800px;
+    left: 425px;
+}
+.card2:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card2 img{
+    width: 100%;
+    height:170px;
+}
+.card2 p{
+    text-align: center;
+font-size: 20px;
+font-weight: bolder;
+
+}
+.card2 button{
+margin-left: 100px;
+margin-top: 24px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card3{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 800px;
+    left: 775px;
+}
+.card3:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card3 img{
+    width: 100%;
+    height:170px;
+}
+.card3 p{
+margin-left: 20px;
+font-size: 20px;
+margin-top: 0px;
+font-weight: bolder;
+}
+.card3 button{
+margin-left: 100px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card4{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 800px;
+    left: 1125px;
+}
+.card4:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card4 img{
+    width: 100%;
+    height: 170px;
+}
+.card4 p{
+margin-left: 20px;
+font-size: 20px;
+margin-top: 0px;
+font-weight: bolder;
+}
+.card4 button{
+margin-left: 100px;
+ margin-top: 22px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card5{
+height: 300px;
+width: 300px;
+/* border: 1px solid white; */
+/* color: white; */
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+position: absolute;
+top: 1150px;
+left: 75px;
+}
+.card5:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card5 img{
+width: 100%;
+height:170px;
+/* border-radius: 10px; */
+}
+.card5 p{
+margin-left: 20px;
+font-size: 20px;
+margin-top: 0px;
+font-weight: bolder;
+}
+.card5 button{
+margin-left: 100px;
+margin-top: 22px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card6{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 1150px;
+    left: 425px;
+}
+.card6:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card6 img{
+    width: 100%;
+    height:170px;
+}
+.card6 p{
+margin-left: 20px;
+font-size: 20px;
+margin-top: 0px;
+font-weight: bolder;
+}
+.card6 button{
+margin-left: 100px;
+margin-top: 0px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card7{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 1150px;
+    left: 775px;
+}
+.card7:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card7 img{
+    width: 100%;
+    height:170px;
+}
+.card7 p{
+margin-left: 20px;
+margin-top: 10px;
+font-size: 20px;
+text-align: center;
+font-weight: bolder;
+}
+.card7 button{
+margin-left: 100px;
+margin-top: 12px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.card8{
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid white; */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 1150px;
+    left: 1125px;
+}
+.card8:hover{
+    box-shadow: 2px 2px 5px blue,-2px -2px 5px blue;
+    height: 320px;
+    width: 320px;
+}
+.card8 img{
+    width: 100%;
+    height:170px;
+}
+.card8 p{
+margin-left: 20px;
+font-size: 20px;
+margin-top: 0px;
+font-weight: bolder;
+}
+.card8 button{
+margin-left: 100px;
+margin-top: 22px;
+padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:blue;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.fa-whatsapp{
+    color:black;
+    /* background-color: white; */
+    font-size: 20px;
+    font-weight: bolder;
+}
+hr{
+    width: 1300px;
+    height: 10px;
+    color: blue;
+    background-color: blue;
+    position: absolute;
+    top: 950px;
+    left: 100px;
+    z-index: -1;
+    border-style: none;
+    
+}
+.hr{
+    width: 1300px;
+    height: 10px;
+    color: blue;
+    background-color: blue;
+    position: absolute;
+    top:1300px;
+    left: 100px;
+    z-index: -1;
+    border-style: none;
+    
+}
+.hr1{
+    width: 300px;
+    height: 10px;
+    color: blue;
+    background-color: blue;
+    position: absolute;
+    top:1200px;
+    left: 80px;
+    z-index: -1;
+    border-style: none;
+    transform: rotate(90deg);
+    
+}
+.hr2{
+    width: 300px;
+    height: 10px;
+    color: blue;
+    background-color: blue;
+    position: absolute;
+    top:1200px;
+    left: 1125px;
+    z-index: -1;
+    border-style: none;
+    transform: rotate(90deg);
+    
+}
+.p1{
+    color:black;
+    border: 1px solid white;
+    width: 600px;
+    height: 270px;
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    font-size: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bolder; 
+    text-align: justify;
+}
+i{
+    font-size: 30px;
+    color:blue ;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+    /* font-weight: bolder; */
+}
+footer{
+    height: 150px;
+    width:100%;
+    position:relative;
+    top:1800px;
+    background-color:blue;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px 0; */
+    /* flex-wrap: wrap; */
+    /* opacity: 0.5; */
+}
+footer p i{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(79, 222, 244);
+    font-weight: bolder;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top:80px;
+}
+footer p i:hover{
+    transform: translateY(-10px);
+}
+footer .menu{
+    position: absolute;
+    top: 0px;
+    left: 570px;
+}
+footer .menu p{
+    font-size: 20px;
+    padding: 10px;
+    color: white;cursor: pointer;
+}
+footer .menu p:hover{
+    font-size: 24px;
+    transition: 1px;;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+.menu  a{
+    color: white;
+}
+/* #pop{
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 800px;
+    background-color:black;
+    color: blue;
+    z-index: -1;
+} */
+#boxe{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1050px;
+    left: 300px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x1{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe1{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1050px;
+    left:650px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x2{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe2{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1050px;
+    left:1000px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x3{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe3{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1050px;
+    left:1318px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x4{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe4{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1300px;
+    left:300px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x5{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe5{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1300px;
+    left:650px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x6{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe6{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1300px;
+    left:1000px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x7{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe7{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 1300px;
+    left:1318px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black,-5px -5px 10px black;
+    color: blue;
+    /* z-index: 1; */
+    display: none;
+    border-radius: 20px;
+}
+#x8{
+    /* border-style: none; */
+    border-radius: 10px;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boxe h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe1 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe2 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe3 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe4 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe5 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe6 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+#boxe7 h4{
+    margin-left: 10px;
+    padding-inline: 5px;
+    margin-top: 10px;
+}
+
+ul a{
+    color: white;
+}
+
+
+.dropdownlink{
+    position: relative;
+    width: fit-content;
+}
+.content{
+    position: absolute;
+    left:-60px;
+    top: 43px;
+    width: 295px;
+    height: 348px;
+    display:none;
+    flex-direction: column;
+    /* width: fit-content; */
+    background-color: white;
+    border-radius: 10px;
+    /* top: 100%;
+    left:100%; */
+    /* opacity: 1; */
+    /* transition: opacity 1s ease-in; */
+    overflow: hidden;
+}
+.sub{
+    border: 1px solid black;
+    color:blue;
+    text-align: center;
+    background-color: white;
+}
+.sub:hover{
+    font-weight: bolder;
+}
+.dropdownlink:hover .content{
+    display: flex;
+}
+.dropdownlink1{
+    position: relative;
+    width: fit-content;
+}
+.about{
+    position: absolute;
+    left:-80px;
+    top: 43px;
+    width: 295px;
+    height: 348px;
+    display:none;
+    flex-direction: column;
+    /* width: fit-content; */
+    background-color: white;
+    border-radius: 10px;
+    /* top: 100%;
+    left:100%; */
+    /* opacity: 1; */
+    /* transition: opacity 1s ease-in; */
+    overflow: hidden;
+}
+.sub1{
+    /* border: 1px solid black; */
+    color:blue;
+    text-align: justify;
+    background-color: white;
+    font-weight: bolder;
+}
+.dropdownlink1:hover .about{
+    display: flex;
+    box-shadow: 2px 2px 5px white,-2px -2px 5px white;
+}
+</style>
+    <div class="box1">
+        <img src="badhrinath.png" alt="">
+    </div>
+    <div class="box"></div>
+     <h2 class="hh">IntelliGITS</h2>
+     <h1>Welcome to IntelliGITS Institute for<br><span>Training and Solutions</span></h1>
+     <p class="p1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>IntelliGITS</i> is a professional training certification provider, helping professionals across various industries to develop skills, expertise to get recognition and growth across geographies. <br>
+
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have gained recognition over the years in professional training certification for IT & IT enabled industries for ITIL, PMP, PRINCE2, Six Sigma, sAFE, Cloud Management, RPA + AI and  ISO 9000, ISO 27000, ISO 20000, ISO 31000 etc. for latest courses to Impart and Implement. <br>
+    
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Specialized Technical Assistance. <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Expert Consultation: Personalized advice from Industry Leaders. <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;- Training, Certification & Project Support for Students, Freshers &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;& Experienced Professionals.</p>
+     <button class="b1"><a href="https://docs.google.com/forms/d/14vBBj8uB6fux8WCbjaE-6QPPAY8Ff-dOidqwqSJCd-A/edit">Register now</a></button>
+     <!-- <a href=""><i class="fa-brands fa-whatsapp"></i></a> -->
+      <button class="b2"><a href="https://wa.me/9841010323"><i class="fa-brands fa-whatsapp"></i>whatsapp</a></button>
+     <ul>
+        <li><a href="project.html">Home</a></li>
+        <li class="dropdownlink">Courses Training
+                <div class="content">
+                    <div class="sub">IT Service Management</div>
+                    <div class="sub">Information Security Management</div>
+                    <div class="sub">Quality & Continual Service Management(LEan, 6Sigma, Agile & sAFE)</div>
+                    <div class="sub">Auditing Service(ISO 9001, ISO 20001, ISO 27001 etc.)</div>
+                    <div class="sub">IT Cloud Service Management & AI (Artificial Intelligence)</div>
+                    <div class="sub">Project Management, Prince2 & RPA (Robotics Process Automation)</div>
+                    <div class="sub">Technical, Client & Global Requirements</div>
+                    <div class="sub">Data Science Management & Analytics Management</div>
+                </div>
+            </li>
+        <li class="dropdownlink1">About us
+            <div class="about">
+                <p class="sub1"> &nbsp;&nbsp;IntelliGITS is a professional Training & Consultancy provider, helping professionals across various industries to develop skills, expertise to get recognition and growth in various organsations world wide.
+        
+                    We have gained recognition over the years in professional training certification in IT industry such as PRINCE2, DevOps, PMP, Six Sigma, ITIL and many other leading courses.</p>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact us</a></li>
+    </ul>
+    <div class="card">
+    <div class="card1">
+     <img src="it.jpg" alt="">
+     <p>IT Service Management</p>
+     <button id="bt1" onclick="say()">Know More</button>
+    </div>
+    <div class="card2">
+        <img src="is1.jpg" alt="">
+        <p>Information Security Management</p>
+        <button onclick="say1()">Know More</button>
+     </div>
+    <div class="card3">
+        <img src="qm.jpg" alt="">
+        <p>Quality & Continual Service Management (Lean, 6Sigma, Agile & sAFE)</p>
+        
+        <button onclick="say2()">Know More</button>
+    </div>
+    <div class="card4">
+        <img src="audit.jpg" alt="">
+           <p>Auditing Services (ISO 9001, ISO 20001, ISO 27001 etc.)</p>
+        
+        <button onclick="say3()">Know More</button>
+    </div>
+    <div class="card5">
+        <img src="ai1.jpg" alt="">
+        <p>IT Cloud Serives Management & AI (Artificial Intelligence)</p>
+       
+        
+        <button onclick="say4()">Know More</button>
+       </div>
+       <div class="card6">
+        <img src="rpa.jpg" alt="">
+        <p>Project Management, PRINCE2 & RPA (Robotics Process Automation)</p>
+           
+           <button onclick="say5()">Know More</button>
+        </div>
+       <div class="card7">
+           <img src="client2.jpg" alt="">
+           <p> Technical, Client & Global Requirements</p>
+           <button onclick="say6()">Know More</button>
+       </div>
+       <div class="card8">
+           <img src="ds.jpg" alt="">
+           <p>Data science Management & Analytics Management</p>
+           <button onclick="say7()">Know More</button>
+       </div>
+    </div>
+    <hr>
+    <hr class="hr">
+    <hr class="hr1">
+    <hr class="hr2">
+    <div id="boxe">
+    <button id="x1" onclick="saynot()">X</button>
+        <div class="course">
+        <h4>ITSM is to manage the end-to-end delivery of IT Services to customers by Design, Create, Deliver & Support latest and Global IT services.</h4>
+        </div>
+     </div>
+     <div id="boxe1">
+        <button id="x2" onclick="saynot1()">X</button>
+            <div class="course">
+                <h4>ISM is a set of policies and procedures for organizations to protect their Information Assets from Threats & Vulnerabilities to ensure Confidentiality, Integrity & Availability.</h4>
+
+            </div>
+         </div>
+    <div id="boxe2">
+        <button id="x3" onclick="saynot2()">X</button>
+             <div class="course">
+                <h4>Lean, 6Sigma, Agile, sAFE etc. are Continual Service Improvement methodologies to help Business Processes & Services in a data-driven, analytical approaches with Latest IT Tools. </h4>
+
+                </div>
+             </div>
+    <div id="boxe3">
+        <button id="x4" onclick="saynot3()">X</button>
+             <div class="course">
+                <h4> Audits are conducted to Evaluate & Confirm Processes related to Quality, Information Security of Products & Services for Organizations effective results of Implementation.</h4>
+
+                        </div>
+                     </div>
+    <div id="boxe4">
+        <button id="x5" onclick="saynot4()">X</button>
+             <div class="course">
+                <h4>CSM & GAI are to control, maintain an organization's cloud-based services using Generative Artificial Intelligence via new Content, Ideas, Stories, Images, videos etc. </h4>
+
+                                        </div>
+                                     </div>
+    <div id="boxe5">
+        <button id="x6" onclick="saynot5()">X</button>
+            <div class="course">
+                <h4>PMP, PRINCE2 (Projects IN Controlled Environments) & Robotic Process Automations are used for effective project managements.</h4>
+
+                                                                        </div>
+                                                                     </div>
+    <div id="boxe6">
+        <button id="x7" onclick="saynot6()">X</button>
+             <div class="course">
+                <h4>Global Data Protection Regulations of various countries - handle personal data: Lawfulness, Fairness, Transparency, Data Accuracy & Storage.</h4>
+
+             </div>
+         </div>
+         <div id="boxe7">
+            <button id="x8" onclick="saynot7()">X</button>
+                 <div class="course">
+                    <h4>Analytics management in information security, also known as security analytics, is a proactive cybersecurity approach that uses data to detect, analyze, and mitigate cyberthreats.</h4>
+
+                 </div>
+             </div>
+    <footer>
+            <p><i class="fa-brands fa-square-facebook"></i></p>
+            <p><i class="fa-brands fa-square-twitter"></i></p>
+            <p><a href="http://www.linkedin.com/in/intelligits-training-and-it-consultancy-861402332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a></p>
+            <p><i class="fa-brands fa-square-instagram"></i></p>
+            <ul class="menu">
+                <p>Home</p>
+                <p>About</p>
+                <p>Services</p>
+                <p><a href="contact.html">Contact</a></p>
+            </ul>
+    </footer>
+    <script>
+    function say(){
+            document.getElementById("boxe").style.display="block";
+        }
+    function saynot(){
+            document.getElementById("boxe").style.display="none";
+            }
+    function say1(){
+            document.getElementById("boxe1").style.display="block";
+        }
+    function saynot1(){
+            document.getElementById("boxe1").style.display="none";
+            }
+    function say2(){
+            document.getElementById("boxe2").style.display="block";
+        }
+    function saynot2(){
+            document.getElementById("boxe2").style.display="none";
+            }
+    function say3(){
+            document.getElementById("boxe3").style.display="block";
+        }
+    function saynot3(){
+            document.getElementById("boxe3").style.display="none";
+            }
+    function say4(){
+            document.getElementById("boxe4").style.display="block";
+        }
+    function saynot4(){
+            document.getElementById("boxe4").style.display="none";
+            }
+    function say5(){
+            document.getElementById("boxe5").style.display="block";
+        }
+    function saynot5(){
+            document.getElementById("boxe5").style.display="none";
+            }
+    function say6(){
+            document.getElementById("boxe6").style.display="block";
+        }
+    function saynot6(){
+            document.getElementById("boxe6").style.display="none";
+            }
+    function say7(){
+            document.getElementById("boxe7").style.display="block";
+        }
+    function saynot7(){
+            document.getElementById("boxe7").style.display="none";
+            }
+    </script>    
+</body> 
+</html>
